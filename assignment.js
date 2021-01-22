@@ -1,27 +1,39 @@
-// Github Link: https://github.com/sohrab09/assignment.js
 
-// kilometerToMeter Convert 
 
-/*function kilometerToMeter(kilometer){
+Github_Code_Link: https://github.com/sohrab09/assignment.js
+
+
+        // kilometerToMeter Convert 
+
+
+function kilometerToMeter(kilometer){
     if (kilometer >= .01){
         let meter = kilometer * 1000;
         return meter;
     }
     else if (kilometer == 0){
-        return "your input number is '0', which is not countable value."
+        return "your input number is '0' is not countable value."
     }
     else{
         return "Invalid Number."
     }
 }
-var result = kilometerToMeter(35.6);
-console.log(result); */
+var result = kilometerToMeter(6);
+// console.log(result);
 
 
-// budgetCalculator 
+        // budgetCalculator 
 
 
-/* function totalCost({ watch, phone, laptop}) {
+function TotalCost({ watch, phone, laptop }) {
+    if (watch.price <= 0) throw Error("negative price is not allowed")
+    if (phone.price <= 0) throw Error("negative price is not allowed")
+    if (laptop.price <= 0) throw Error("negative price is not allowed")
+
+    if (watch.quantity <= 0) throw Error("negative quantity is not allowed")
+    if (phone.quantity <= 0) throw Error("negative quantity is not allowed")
+    if (laptop.quantity <= 0) throw Error("negative quantity is not allowed")
+
     return (watch.price * watch.quantity) + (laptop.price * laptop.quantity) + (phone.price * phone.quantity)
 }
 var total = {
@@ -38,11 +50,13 @@ var total = {
         quantity: 5
     }
 }
-console.log(totalCost(total)); */
+// console.log(TotalCost(total));
 
-// hotelCost
 
-/* function hotelCost(day) {
+         // hotelCost
+
+
+function hotelCost(day) {
     var cost = 0;
     if (day <= 10) {
         cost = day * 100;
@@ -52,7 +66,7 @@ console.log(totalCost(total)); */
         var secondStay = remaining * 80;
         cost = firstStay + secondStay;
     }
-    else{
+    else {
         var firstStay = 10 * 100;
         var secondStay = 10 * 80;
         var remaining = day - 20;
@@ -61,22 +75,24 @@ console.log(totalCost(total)); */
     }
     return cost;
 }
-var count = hotelCost(39);
-console.log(count); */
+var count = hotelCost(29);
+// console.log(count);
 
-// megaFriend
 
-/* function megaFriend(friends){
+        // megaFriend
+
+
+function megaFriend(friends) {
     var maxLength = -1, position = -1;
-    for ( var i = 0; i <friends.length; i++){
-        if (maxLength < friends[i].length){
+    for (var i = 0; i < friends.length; i++) {
+        if (maxLength < friends[i].length) {
             maxLength = friends[i].length;
-            position=[i];
+            position = [i];
         }
     }
     return friends[position];
 }
 
-var friends = ["sahin Alam Hridoy", "Sakim Hossain Pranto", "Rayhan Ahmed Rimon", "Al-Amin Hossain Miraje", "Md Faisal", "Mohammad Sohrab Hossain Nahid"];
+var friends = ["Sakim Hossain", "Pranto Islam", "Rayhan Ahmed", "Rimon", "Al-Amin", "Hossain Miraje", "Md Faisal", "Mohammad", "Sohrab Hossain"];
 
-console.log(megaFriend(friends)); */
+// console.log(megaFriend(friends));
