@@ -12,13 +12,13 @@ function kilometerToMeter(kilometer){
         return meter;
     }
     else if (kilometer == 0){
-        return "your input number is '0' is not countable value."
+        return " '0' is not countable value."
     }
     else{
-        return "Invalid Number."
+        return "Please input a positive number."
     }
 }
-var result = kilometerToMeter(6);
+var result = kilometerToMeter(2);
 // console.log(result);
 
 
