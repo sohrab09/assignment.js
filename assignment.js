@@ -1,4 +1,4 @@
-
+// Github Link: https://github.com/sohrab09/assignment.js
 
 // kilometerToMeter Convert 
 
@@ -21,7 +21,7 @@ console.log(result); */
 // budgetCalculator 
 
 
-/* function TotalCost({ watch, phone, laptop}) {
+/* function totalCost({ watch, phone, laptop}) {
     return (watch.price * watch.quantity) + (laptop.price * laptop.quantity) + (phone.price * phone.quantity)
 }
 var total = {
@@ -38,7 +38,7 @@ var total = {
         quantity: 5
     }
 }
-console.log(TotalCost(total)); */
+console.log(totalCost(total)); */
 
 // hotelCost
 
@@ -66,7 +66,7 @@ console.log(count); */
 
 // megaFriend
 
-function megaFriend(friends){
+/* function megaFriend(friends){
     var maxLength = -1, position = -1;
     for ( var i = 0; i <friends.length; i++){
         if (maxLength < friends[i].length){
@@ -79,4 +79,4 @@ function megaFriend(friends){
 
 var friends = ["sahin Alam Hridoy", "Sakim Hossain Pranto", "Rayhan Ahmed Rimon", "Al-Amin Hossain Miraje", "Md Faisal", "Mohammad Sohrab Hossain Nahid"];
 
-console.log(megaFriend(friends));
+console.log(megaFriend(friends)); */
